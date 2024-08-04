@@ -29,19 +29,17 @@ class RoadMapPage extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.white),
         title: Text(index  == 1 ? 'Flutter' : index == 0? 'Data Science': 'Marketing', style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.black,
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 18.0, top: 6, bottom: 6),
+            child: Image.asset('images/evo-vector.png',height: 30,),
+          )
+        ],
       ),
        body:
        
        content
-      // Center(
-      //   child: Text(
-      //     index == 1 ? 'Flutter Road Map Content Here' : index == 0? 'Data Science Road Map Content Here':'Marketing Road Map Content Here',
-      //     style: TextStyle(
-      //       fontSize: 24,
-      //       color:Colors.black,
-      //     ),
-      //   ),
-      // ),
+      
     );
   }
 }
